@@ -1,0 +1,194 @@
+[Main]
+Form                =   Betriebsumgebung         ,,,,,,
+MainHelp            =   &Hilfe                           ,,,,,,
+MainCancel          =   Abbruch                          ,,,,,,
+MainOK              =   OK                              ,,,,,,
+cmdPassword         =   &Kennwort...                    ,,,,,,
+cmdDisplay          =   &Anzeige...                     ,,,,,,
+cmdCommon           =   Fortgeschritten...                    ,,,,,,
+fraOperatingMode    =   Aktueller Modus          ,,,,,,
+cmdBattery          =   &Batterie...                    ,,,,,,
+pnlPercent          =                                   ,,,,,,
+pnlOperateMode      =                                   ,,,,,,
+fraPowerMode        =   &Leistungsmodus bei Verwendung der Batterie  ,,,,,,
+cmdSetting          =   &Einstellung...                     ,,,,,,
+optPowerHigh        =   High                            ,,,,,,
+optPowerLow         =   Low                             ,,,,,,
+optPowerUser        =   User                            ,,,,,,
+pnlMainStatus       =                                   ,,,,,,
+
+[Advanced]
+Form                =   ,,,,,,
+AdvHelp             =   ,,,,,,
+AdvCancel           =   ,,,,,,
+AdvOK               =   ,,,,,,
+pnlAdvanceStatus    =   ,,,,,,
+fraLidClose         =   ,,,,,,
+optLidNo            =   ,,,,,,
+optLidYes           =   ,,,,,,
+fraWakeUp           =   ,,,,,,
+pnlTextBox          =   ,,,,,,
+txtWkUpHour         =   ,,,,,,
+txtWkUpMin          =   ,,,,,,
+optResTimeOff       =   ,,,,,,
+optResTimeOn        =   ,,,,,,
+SpinMin             =   ,,,,,,
+SpinHour            =   ,,,,,,
+lblDelimit          =   ,,,,,,
+fraSuspMode         =   ,,,,,,
+optSuspResume       =   ,,,,,,
+optSaveToDisk       =   ,,,,,,
+
+[Display]
+Form                =   Anzeigeeinstellung         ,,,,,,
+DispHelp            =   &Hilfe                   ,,,,,,
+DispCancel          =   Abbruch                  ,,,,,,
+DispOK              =   OK                      ,,,,,,
+pnlDispStatus       =                           ,,,,,,
+fraTarget           =   &Ziel                 ,,,,,,
+optLCD              =   LCD                     ,,,,,,
+optCRT              =   CRT                     ,,,,,,
+optLCDCRT           =                           ,,,,,,
+
+[Password]      
+Form                =   Kennworteinstellung          ,,,,,,
+PswdHelp            =   &Hilfe                     ,,,,,,
+PswdCancel          =   Abbruch                    ,,,,,,
+PswdOK              =   OK                        ,,,,,,
+pnlPswdStatus       =                             ,,,,,,
+fraPassword         =   K&ennwort                  ,,,,,,
+txtOldPassword      =                             ,,,300,,,
+txtNewPassword      =                             ,,,300,,,
+txtRtypPswd         =                             ,,,300,,,
+NewPassword         =   &Neues Kennwort:            ,,,,,,
+RetypeNew           =   Neues &Kennwort noch einmal:     ,,,,,,
+OldPassword         =   &Altes Kennwort:            ,,,,,,
+
+[Setting]
+Form                =   Benutzereinstellung      ,,,,,,
+UserDef             =   &Standard          ,,,,,,
+UserHelp            =   &Hilfe             ,,,,,,
+UserCancel          =   Abbruch            ,,,,,,
+UserOK              =   OK                ,,,,,,
+pnlUserStatus       =                     ,,,,,,
+fraCPU              =   &CPU-Geschwindigkeit        ,,,,,,
+optCPU12            =   1/2               ,,,,,,
+optCPUMax           =   Max               ,,,,,,
+fraStandby          =   &Bereitschaft          ,,,,,,
+txtStdbyTime        =                     ,,,,,,
+StandbySpin         =                     ,,,,,,
+StandbyMin          =   Min.             ,,,,,,
+fraSuspend          =   S&uspendierung          ,,,,,,
+txtSuspTime         =                     ,,,,,,
+SuspendSpin         =                     ,,,,,,
+SuspendMin          =   Min.             ,,,,,,
+
+[Battery]
+Form                =   Batterie             ,,,,,,
+cmdBttryHelp        =   &Hilfe               ,,,,,,
+cmdBttryCancel      =   Abbruch              ,,,,,,
+cmdBttryOK          =   Ausführen             ,,,,,,
+fraBattery          =   &Batterie            ,,,,,,
+optBrtyChange       =   Batterie auswechseln   ,,,,,,
+optCharge           =   Batterie auffrischen  ,,,,,,
+pnlBatteryStatus    =                       ,,,,,,
+
+[About]
+Form                =   Über Betriebsumgebung   ,,,,,,
+AboutIcon           =                                 ,,,,,,
+AboutText           =   Betriebsumgebung-Dienstprogramm ,,,,,,
+CopyRight1          =   Copyright CANON INC. 1995-1996,,,,,,
+CopyRight2          =   All Rights reserved           ,,,,,,
+VersionText         =                                 ,,,,,,
+AboutOK             =   OK                            ,,,,,,
+
+[MainStatusHelp]
+1    =     Aktiviert den Leistungsmodus und beendet dieses Programm.  
+2    =     Deaktiviert den Leistungsmodus und beendet dieses Programm.  
+3    =     Zeigt Hilfe für das Betriebsumgebung-Dienstprogramm an.  
+4    =     Setzt den Leistungsmodus auf High.  
+5    =     Setzt den Leistungsmodus auf Low.  
+6    =     Setzt den Leistungsmodus auf User.  
+7    =     Setzt die Details für den Benutzer-Leistungsmodus.  
+8    =     ,
+9    =     Setzt das Ausgabeziel.  
+10   =     Setzt oder hebt das Kennwort bei Start des Computers auf.  
+11   =     Führt Auffrischung oder Auswechseln der Batterie durch.  
+
+[AdvStatusHelp]
+1   =      ,  
+2   =      ,  
+3   =      ,  
+4   =      ,  
+5   =      ,  
+6   =      ,  
+7   =      ,  
+8   =      ,  
+9   =      ,  
+10  =      ,  
+11  =      ,  
+12  =      ,  
+13  =      ,  
+
+[UserStatusHelp]
+1   =      Aktiviert die Einstellungen und schließt.  
+2   =      Deaktiviert die Einstellungen und schließt.  
+3   =      Zeigt Hilfe für die Benutzereinstellung an.  
+4   =      Setzt die Suspendierungszeitintervalle.  
+5   =      Setzt die Bereitschaftszeitintervalle.  
+6   =      Setzt die CPU-Geschwindigkeit auf Maximum.  
+7   =      Setzt die CPU-Geschwindigkeit auf 1/2.  
+8   =      Schaltet zum Standardwert zurück.  
+
+[DispStatusHelp]
+1   =      Aktiviert die Einstellungen und schließt.  
+2   =      Deaktiviert die Einstellungen und schließt.  
+3   =      Zeigt Hilfe für die Anzeigeeinstellung an.  
+4   =      Setzt das Ziel auf LCD.  
+5   =      Setzt das Ziel auf CRT.  
+6   =      ,
+
+[PswdStatusHelp]
+1   =      Aktiviert die neue Kennworteinstellung und schließt.  
+2   =      Deaktiviert die Einstellungen und schließt.  
+3   =      Zeigt Hilfe für die Kennworteinstellung an.  
+4   =      Das aktuelle Kennwort eingeben.  
+5   =      Das neue Kennwort eingeben.  
+6   =      Das neue Kennwort noch einmal eingeben.  
+
+[BettryStatusHelp]
+1   =      Führt das ausgewählte Element aus und schließt.  
+2   =      Deaktiviert das ausgewählte Element und schließt.  
+3   =      Zeigt Hilfe für die Batterie an.  
+4   =      Entlädt die Batterie und lädt sie neu auf.  
+5   =      Suspendiert das System während des Batteriewechsels.  
+
+[Messages]
+1   =     &Info...  
+2   =     Betriebsumgebung-Meldungen
+3   =     Betriebsumgebung 
+4   =     Betriebsumgebung-Dienstprogramm ist bereits ausgeführt worden.  
+5   =     Unzulässiger Rechnertyp.  Dieses Programm kann nicht ausgeführt werden. 
+6   =     Systemfehler.  
+7   =     Die Leistungsverwaltungsfunktion ist ausgeschaltet, die Einstellungen in diesem Dienstprogramm können nicht geändert werden.  Nach dem Einschalten wie folgt wiederholen:<LF>Leistung in der Systemsteuerung starten und Leistungsverwaltung auf Fortgeschritten stellen.  
+8   =     Der in Bereitschaft eingestellte Wert überschreitet den gegenwärtig verwendbaren Wert.  Neu eingeben.  
+9   =     Bei der aktuellen Auflösung kann das Anzeigeziel nicht auf LCD umgeschaltet werden.  Die Auflösung auf 800 x 600 oder 640 x 480 einstellen und wiederholen.
+10   =     Bei der aktuellen Auflösung kann das Anzeigeziel nicht auf LCD umgeschaltet werden.  Die Auflösung auf 640 x 480 einstellen und wiederholen.
+11   =     Das noch einmal eingegebene neue Kennwort ist falsch.  Das Kennwort erneut eingeben.  
+12   =     Das alte Kennwort ist falsch.  Das richtige Kennwort eingeben.
+13   =     Batterieauffrischung ist abgeschlossen.  
+14   =     Batterieauffrischung abgebrochen.<LF>Erneut ausführen? 
+15   =     Während der Entladung und Neuaufladung der Batterie wird das System suspendiert.  Der Vorgang dauert ungefähr 15 Stunden.  Nach Erlöschen der Leistungslampe und Ladelampe den Leistungsschalter ausschalten.  OK? 
+16   =     Während des Batteriewechsels wird das System suspendiert.  OK?  
+17   =     Netzadapter
+18   =     Batterie
+19   =     Verbleibende Leistung:  
+20   =     Systemfehler  
+21   =     Datei konnte nicht gefunden werden.<LF>Programm abgebrochen.<LF><LF>
+22   =     Initialisierungsfehler
+23   =     Wert der verbleibenden Batterieleistung ist möglicherweise falsch. "Auffrischen der Batterie" ausführen.
+24   =     Dieses Programm kann nur im erweiterten Modus für 386-PC ausgeführt werden.  Windows im erweiterten Modus für 386-PC laufen lassen.
+25   =     Bei der aktuellen Auflösung und Anzahl Farben kann das Anzeigeziel nicht auf LCD umgeschaltet werden.  Nach Einstellung der Auflösung und Anzahl Farben auf 800 x 600 256 Farben oder 640 x 480 256 Farben die Umschaltung wiederholen.
+26   =     Bei der aktuellen Auflösung und Anzahl Farben kann das Anzeigeziel nicht auf LCD umgeschaltet werden.  Nach Einstellung der Auflösung und Anzahl Farben auf 640 x 480 256 Farben die Umschaltung wiederholen.  
+27   =     Bei der aktuellen Anzahl Farben kann das Anzeigeziel nicht auf LCD umgeschaltet werden.  Nach Einstellung der Anzahl Farben auf 256 die Umschaltung wiederholen.
+

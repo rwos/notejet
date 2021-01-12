@@ -1,0 +1,622 @@
+[FMain]
+Form		= Computer-Spezifikationen,,,,,,
+TagTxt		= ,MS Sans Serif,8.25,,,,
+TopicBtn	= ,MS Sans Serif,8.25,,,,
+SysBtn		= ,MS Sans Serif,8.25,,,,
+StatusBar	= ,MS Sans Serif,8.25,,,,
+TopicName	= ,MS Sans Serif,8.25,,,,
+TopicText	= ,,,,,,
+LabelTitle	= ,MS Sans Serif,8.25,,,,
+SelBtn		= ,MS Sans Serif,8.25,,,,
+
+[PDialog]
+Form		= ,,,,,,
+DefPrnTitle	= Vorgabedrucker,MS Sans Serif,8.25,,,,
+DefPrnName	= ,MS Sans Serif,8.25,,,,
+CurrentTopic	= ,MS Sans Serif,8.25,,,,
+Switch1		= A&ktuelles Thema,MS Sans Serif,8.25,,,,
+Switch2		= Alle &Themen,MS Sans Serif,8.25,,,,
+Switch3		= A&usgewählte Themen,MS Sans Serif,8.25,,,,
+SelClear	= Auswahl &löschen,MS Sans Serif,8.25,,,,
+Choice		= ,MS Sans Serif,8.25,,,,
+OKBtn		= &OK,MS Sans Serif,8.25,,,,
+CanBtn		= &Abbrechen,MS Sans Serif,8.25,,,,
+SetupBtn	= &Einstellung...,MS Sans Serif,8.25,,,,
+Title		= Drucken,MS Sans Serif,8.25,,,,
+
+[NowPrint]
+Form		= ,,,,,,
+WaitMsg		= Druckauftrag in Arbeit... Warten Sie bitte.,8.25,,,,
+CanBtn		= &Abbrechen,,,,,,
+
+[Messages]
+1 = Der Drucker wurde gewechselt. Verlassen Sie das Programm, und versuchen Sie es dann noch einmal.
+2 = Sie haben kein Thema gewählt.
+3 = <Page>Stichwort nicht gefunden.
+4 = Kein Vorgabedrucker.
+
+[Status]
+1 = Zeigt das Thema "@0" an.
+2 = Zeigt den Hilfetext an.
+3 = Druckt das Thema.
+4 = Beendet das Programm Computer-Spezifikationen.
+5 = Kehrt zum vorherigen Fenster zurück.
+6 = Zeigt die Themen-Schaltfläche in "@0" an.
+
+[AddMsg]
+1 = Windows-Betriebsart\t: @0\nSpeicher insgesamt\t\t\t: @1 KB ( @2 MB )\nBasis-RAM\t\t\t: @3 KB ( @4 MB )\nDIMM-Speicher\t\t\t: @5 KB ( @6 MB )\nFreier Speicher\t\t: @7 Byte\n
+2 = <<Festplatteninformation>>\nMax. Anzahl Zylinder\t: @0 Zylinder\nMax. Anzahl Köpfe\t: @1 Köpfe\nAnzahl Sektoren pro Spur\t: @2 Sektoren/Spur\nByte pro Sektor\t\t\t: @4 Byte/Sektor\nSektoren pro Cluster\t\t: @5 Sektoren/Cluster\nGesamtspeicherkapazität\t: @3 MB\n
+3 = CPU-Typ\t:@0\nHersteller\t:@1\nZweites Cache\t:@2\n@3
+4 = 386 erweiterter Modus,Standardmodus
+5 = Coprozessor.,Kein Coprozessor.
+6 = Optionen,Keine Optionen
+7 = Keine Festplatte.
+8 = MHz
+9 = DX2WB,DX4,DX4WB,Pentium,Unbekannt
+10 = Intel,AMD,Cyrix,Unbekannt
+11 = 0
+
+[SysUse]
+1 = MS Sans Serif
+2 = hspecdeu.hlp
+3 = ..\NEWGIF
+4 = &Hilfe
+5 = &Drucken
+6 = E&xit
+7 = &Zurück
+
+[Tab1]
+TabName = Bedienteile
+TabPicture = TabBody
+1 = Display
+2 = Tastaturarten
+3 = Zeigersteuerung
+4 = Schnittstellen
+5 = Batterie
+[Tab2]
+TabName = Ausstattung
+TabPicture = TabInner
+1 = Diskettenlaufwerk
+2 = MPU
+3 = Speicher
+4 = Festplattenlaufwerk
+[Tab3]
+TabName = Sonstiges
+TabPicture = TabOther
+1 = Disketten
+2 = Gewicht / Abmessungen
+3 = AC Adapter
+4 = Betriebsbedingungen
+[Tab4]
+TabName = Pin-Belegungen
+TabPicture = TabPin
+1 = Monitoranschluß
+2 = Druckeranschluß
+3 = RS-232C-Schnittstelle
+4 = Anschluß für Maus/numerisches Tastenfeld
+5 = PC-Karten-Steckplätze
+6 = Audio-Anschlußbuchsen
+7 = SCSI-Schnittstelle
+
+;**************************************************
+;		Label Section
+;--------------------------------------------------
+;	Syntax
+;	TopicNo, String ,X(Pixel),Y(Pixel)
+;**************************************************
+[Label]
+1 = 2, Funktionstasten ,48,35,
+2 = 2, Schreibmaschinentasten ,472,75,
+3 = 2, Shift Taste ,493,138,
+4 = 2, Pfeiltasten ,495,200,
+5 = 2, Alt Taste ,74,205,
+6 = 2, Caps Lock Taste ,20,98,
+7 = 2, Fn Taste ,74,165,
+
+[JumpBtn]
+1 = 2, USA
+2 = 2, Deutsche
+3 = 2, Schweiz
+
+;***********************************************************************
+;	Topic Message Section
+;-----------------------------------------------------------------------
+;	Syntax:
+;	[Tn]		... Index Number n:1 - 20
+;	xxx:n,-- 	... Picture Section
+;	xxx		..  Picture File Name (.GIF Not)
+;	n		..  Display Mode (0..Picture Only, 1..Partition)
+;			If you are not using picture, you write to "Nothing".
+;	xxxxxx		... Topic Strings (Tab Stop 8 Characters)
+;	_MEMORY_INFO	... Memory Information Add.
+;	_HARDDISK_INFO	... Hard-Disk Information Add.
+;	_COPRO_INFO	... Math-Coprosessor Information Add.
+;		This 3 Strings are add information to you writed position.
+;	@		... Topic EOF
+;***********************************************************************
+[Topic_Msg]
+;<Display>
+[T1]
+Nothing
+_LCD_INFO
+!
+D-STN Farb-LCD mit Hintergrundbeleuchtung
+Bildschirmgröße	: 10, 4 Zoll
+Auflösung		: 640 x 480 Punkte (65.536 Farben)
+			: 800 x 600 Punkte (256 Farben)
+Displayfarbe		: Weiß
+!
+TFT Farb-LCD mit Hintergrundbeleuchtung
+Bildschirmgröße	: 10, 4 Zoll
+Auflösung		: 640 x 480 Punkte (65.536 Farben)
+			: 800 x 600 Punkte (65.536 Farben)
+Displayfarbe		: Weiß
+!
+D-STN Farb-LCD mit Hintergrundbeleuchtung
+Bildschirmgröße	: 10, 4 Zoll
+Auflösung		: 640 x 480 Punkte (65.536 Farben)
+Displayfarbe		: Weiß
+!
+TFT Farb-LCD mit Hintergrundbeleuchtung
+Bildschirmgröße	: 10, 4 Zoll
+Auflösung		: 640 x 480 Punkte (65.536 Farben)
+Displayfarbe		: Weiß
+@
+;<Keyboard Type>
+[T2]
+USKey:0:,GerKey:0:,SwsKey:0:
+@
+<PointingDevice>
+[T3]
+Nothing
+Pointing-Stick mit 2 Tasten
+@
+;<Interfaces>
+[T4]
+Nothing
+Parallel			: 1 parallele Schnittstelle
+Seriell			: 1 RS-232C-Schnittstelle (Übertragungsgeschwindigkeit max. 115.200 bps)
+Maus			: 1 Anschluß für Maus, Trackball oder numerisches Tastenfeld
+Externe CRT		: 1 Anschluß für VGA oder SVGA (1024 x 768 Punkte)
+PC Karte		: 2 PCMCIA Version 2.1 Type II
+			  1 PCMCIA Version 2.1 Type III
+Audio			: 1 Kopfhörerbuchse
+			  1 Line-Eingangsbuchse
+			  1 Mikrofonbuchse
+Infrarot-Kommunikation	: 1 Infrarot-Kommunikationsport (Übertragungsgeschwindigkeit max. 115.200 bps, Knotenabstand 1 cm bis 1 m)
+@
+;<Battery Pack (NiMH)>
+[T5]
+Battery:1:
+Ausgangsspannung	: 12,0 V
+Abmessungen		: 
+	149,5 mm (B) x 89,3 mm (T) x 20,0 mm (H)
+Gewicht			: ca. 584 g
+@
+;<3.5" Floppy Disk Drive>
+[T6]
+Nothing
+3,5-Zoll-Diskettenlaufwerk
+Positionierungszeit	: min. 3 ms/Spur
+Kopfberuhigungszeit	: max. 15 ms
+@
+;<MPU>
+[T7]
+Nothing
+_COPRO_INFO
+@
+;<Memory>
+[T8]
+Nothing
+DIMM-Steckplatz: 1
+
+_MEMORY_INFO
+@
+;<HardDisk Drive>
+[T9]
+Nothing
+_HARDDISK_INFO
+@
+;<Floppy Disks>
+[T10]
+Disks:1:
+3,5-Zoll-Disketten, doppelseitig, mit doppelter Schreibdichte, Doppelspur (2DD) 
+Kapazität		: 720 Kbyte (formatiert)
+Sektoren		: 512 Byte
+Spuren			: 9 Sektoren/Spur
+Spurzahl		: 80 Spuren x 2
+Aufzeichnungsdichte	: 8.717 bpi
+Aufzeichnungsmethode	: MFM (Modified Frequency Modulation)
+ 
+3,5-Zoll-Disketten, doppelseitig, mit hoher Schreibdichte, Doppelspur (2HD)
+Kapazität		: 1,44 Mbyte (formatiert)
+Sektoren		: 512 Byte
+Spuren			: 18 Sektoren/Spur
+Spuranzahl		: 80 Spuren x 2
+Aufzeichnungsdichte	: 17.434 bpi
+Aufzeichnungsmethode	: MFM (Modified Frequency Modulation)
+@
+;<Weight&Dimension>
+[T11]
+View:1:
+Gewicht	:
+	ca. 3,85 kg einschließlich NiMH Batterie (STN-Modell)
+	ca. 3,95 kg einschließlich NiMH Batterie (TFT-Modell)
+
+Abmessungen	: 311 mm (B) x 254 mm (T) x 62,2 mm (H)
+@
+;<AC Adapter>
+[T12]
+Nothing
+Netzanschluß		: 100-240 V, 50/60 Hz
+Ausgangsspannung	: 20 V (2,7 A, 54 W)
+Abmessungen		: 152 mm (B) x 76 mm (T) x 38 mm (H)
+Gewicht			: ca. 430 g
+@
+;<Operating Conditions>
+[T13]
+Nothing
+Temperatur		: 10°C bis 35°C
+Rel. Luftfeuchtigkeit	: 20 bis 80 %
+@
+
+;== Pin Assignment Topics ==
+;<Display Connector>
+[T14]
+Display:1:
+Shrink-D-SUB, 15polig (Federleiste)
+
+Pin	Signalname
+1	Video Rot
+2	Video Grün
+3	Video Blau
+4	n. b.
+5	Erde
+6	Erde
+7	Erde
+8	Erde
+9	KEY
+10	Erde
+11	n. b.
+12	n. b.
+13	Horizontal-SYNC
+14	Vertikal-SYNC
+15	n. b.
+@
+
+;<Printer Connector>
+[T15]
+Printer:1:Page1,Printer:1:Page2
+!
+\U\BSentronics\b\u
+D-SUB, 25polig (Federleiste)
+
+Pin	I/O	Signalname (Compatible)
+1	O	-Strobe
+2	I/O	Data 0
+3	I/O	Data 1
+4	I/O	Data 2
+5	I/O	Data 3
+6	I/O	Data 4
+7	I/O	Data 5
+8	I/O	Data 6
+9	I/O	Data 7
+10	I	-Ack
+11	I	Busy
+12	I	PError
+13	I	Select
+14	O	-Auto Fd
+15	I	-Fault
+16	O	-Init
+17	O	-Select In
+18	-	Signalerde (-STROBE)
+19	-	Signalerde (DATA 0 und DATA 1)
+20	-	Signalerde (DATA 2 und DATA 3)
+21	-	Signalerde (DATA 4 und DATA 5)
+22	-	Signalerde (DATA 6 und DATA 7)
+23	-	Signalerde (BUSY und -ERROR)
+24	-	Signalerde (PE, SLCT und -ACK)
+25	-	Signalerde (-AUTO FD, -SLCT IN und -INIT)
+
+Pin	I/O	Signalname (Nibble und ECP)
+1	O	Host Clk
+2	I/O	Data 0
+3	I/O	Data 1
+4	I/O	Data 2
+5	I/O	Data 3
+6	I/O	Data 4
+7	I/O	Data 5
+8	I/O	Data 6
+9	I/O	Data 7
+10	I	Ptr Clk
+11	I	Ptr Busy
+12	I	Ack Data Req
+13	I	Xflag
+14	O	Host Busy
+15	I	-Data Avail
+16	O	-Init
+17	O	1284 Active
+18	-	Signalerde (-STROBE)
+19	-	Signalerde (DATA 0 und DATA 1)
+20	-	Signalerde (DATA 2 und DATA 3)
+21	-	Signalerde (DATA 4 und DATA 5)
+22	-	Signalerde (DATA 6 und DATA 7)
+23	-	Signalerde (BUSY und -ERROR)
+24	-	Signalerde (PE, SLCT und -ACK)
+25	-	Signalerde (-AUTO FD, -SLCT IN und -INIT)
+
+Pin	I/O	Signalname (Byte)
+1	O	Host Clk
+2	I/O	Data 0
+3	I/O	Data 1
+4	I/O	Data 2
+5	I/O	Data 3
+6	I/O	Data 4
+7	I/O	Data 5
+8	I/O	Data 6
+9	I/O	Data 7
+10	I	Ptr Clk
+11	I	Ptr Busy
+12	I	Ack Data Req
+13	I	Xflag
+14	O	Host Busy
+15	I	-Periph Request
+16	O	-Reverse Request
+17	O	1284 Active
+18	-	Signalerde (-STROBE)
+19	-	Signalerde (DATA 0 und DATA 1)
+20	-	Signalerde (DATA 2 und DATA 3)
+21	-	Signalerde (DATA 4 und DATA 5)
+22	-	Signalerde (DATA 6 und DATA 7)
+23	-	Signalerde (BUSY und -ERROR)
+24	-	Signalerde (PE, SLCT und -ACK)
+25	-	Signalerde (-AUTO FD, -SLCT IN und -INIT)
+
+Pin	I/O	Signalname (EPP)
+1	O	-Write
+2	I/O	AD0
+3	I/O	AD1
+4	I/O	AD2
+5	I/O	AD3
+6	I/O	AD4
+7	I/O	AD5
+8	I/O	AD6
+9	I/O	AD7
+10	I	Intr
+11	I	-Wait
+12	I	Anwenderdefiniert 1
+13	I	Anwenderdefiniert 2
+14	O	-D Strb
+15	I	Anwenderdefiniert 3
+16	O	-Init
+17	O	-A Strb
+18	-	Signalerde (-STROBE)
+19	-	Signalerde (DATA 0 und DATA 1)
+20	-	Signalerde (DATA 2 und DATA 3)
+21	-	Signalerde (DATA 4 und DATA 5)
+22	-	Signalerde (DATA 6 und DATA 7)
+23	-	Signalerde (BUSY und -ERROR)
+24	-	Signalerde (PE, SLCT und -ACK)
+25	-	Signalerde (-AUTO FD, -SLCT IN und -INIT)
+
+Siehe auch : \J\KKey2\kBISentronics\j
+!
+\U\BBISentronics\b\u
+D-SUB, 25polig (Federleiste)
+
+Pin	I/O	Signalname (Compatible)
+1	O	-Strobe
+2	I/O	Data 0
+3	I/O	Data 1
+4	I/O	Data 2
+5	I/O	Data 3
+6	I/O	Data 4
+7	I/O	Data 5
+8	I/O	Data 6
+9	I/O	Data 7
+10	I	-Ack
+11	I	Busy
+12	I	PError
+13	I	Select
+14	O	-Auto Fd
+15	I	-Fault
+16	O	-Init
+17	O	-Select In
+18	-	Signalerde (-STROBE)
+19	-	Signalerde (DATA 0 und DATA 1)
+20	-	Signalerde (DATA 2 und DATA 3)
+21	-	Signalerde (DATA 4 und DATA 5)
+22	-	Signalerde (DATA 6 und DATA 7)
+23	-	Signalerde (BUSY und -ERROR)
+24	-	Signalerde (PE, SLCT und -ACK)
+25	-	Signalerde (-AUTO FD, -SLCT IN und -INIT)
+
+Pin	I/O	Signalname (Nibble und ECP)
+1	O	Host Clk
+2	I/O	Data 0
+3	I/O	Data 1
+4	I/O	Data 2
+5	I/O	Data 3
+6	I/O	Data 4
+7	I/O	Data 5
+8	I/O	Data 6
+9	I/O	Data 7
+10	I	Ptr Clk
+11	I	Ptr Busy
+12	I	Ack Data Req
+13	I	Xflag
+14	O	Host Busy
+15	I	-Data Avail
+16	O	-Init
+17	O	1284 Active
+18	-	Signalerde (-STROBE)
+19	-	Signalerde (DATA 0 und DATA 1)
+20	-	Signalerde (DATA 2 und DATA 3)
+21	-	Signalerde (DATA 4 und DATA 5)
+22	-	Signalerde (DATA 6 und DATA 7)
+23	-	Signalerde (BUSY und -ERROR)
+24	-	Signalerde (PE, SLCT und -ACK)
+25	-	Signalerde (-AUTO FD, -SLCT IN und -INIT)
+
+Pin	I/O	Signalname (Byte)
+1	O	Host Clk
+2	I/O	Data 0
+3	I/O	Data 1
+4	I/O	Data 2
+5	I/O	Data 3
+6	I/O	Data 4
+7	I/O	Data 5
+8	I/O	Data 6
+9	I/O	Data 7
+10	I	Ptr Clk
+11	I	Ptr Busy
+12	I	Ack Data Req
+13	I	Xflag
+14	O	Host Busy
+15	I	-Periph Request
+16	O	-Reverse Request
+17	O	1284 Active
+18	-	Signalerde (-STROBE)
+19	-	Signalerde (DATA 0 und DATA 1)
+20	-	Signalerde (DATA 2 und DATA 3)
+21	-	Signalerde (DATA 4 und DATA 5)
+22	-	Signalerde (DATA 6 und DATA 7)
+23	-	Signalerde (BUSY und -ERROR)
+24	-	Signalerde (PE, SLCT und -ACK)
+25	-	Signalerde (-AUTO FD, -SLCT IN und -INIT)
+
+Pin	I/O	Signalname (EPP)
+1	O	-Write
+2	I/O	AD0
+3	I/O	AD1
+4	I/O	AD2
+5	I/O	AD3
+6	I/O	AD4
+7	I/O	AD5
+8	I/O	AD6
+9	I/O	AD7
+10	I	Intr
+11	I	-Wait
+12	I	Anwenderdefiniert 1
+13	I	Anwenderdefiniert 2
+14	O	-D Strb
+15	I	Anwenderdefiniert 3
+16	O	-Init
+17	O	-A Strb
+18	-	Signalerde (-STROBE)
+19	-	Signalerde (DATA 0 und DATA 1)
+20	-	Signalerde (DATA 2 und DATA 3)
+21	-	Signalerde (DATA 4 und DATA 5)
+22	-	Signalerde (DATA 6 und DATA 7)
+23	-	Signalerde (BUSY und -ERROR)
+24	-	Signalerde (PE, SLCT und -ACK)
+25	-	Signalerde (-AUTO FD, -SLCT IN und -INIT)
+
+Siehe auch : \J\KKey1\kSentronics\j
+@
+;<RS-232C Connector>
+[T16]
+RS232C:1:
+D-SUB, 9polig (Messerleiste)
+
+Pin	I/O	Signalname
+1	I	Data Carrier Detect
+2	I	Receive Data
+3	O	Transmit Data
+4	O	Data Terminal Ready
+5	-	Signalerde
+6	I	Data Set Ready
+7	O	Request to Send
+8	I	Clear to send
+9	I	Ring Indicate
+@
+;<Mouse/10-Key Keypad Connector>
+[T17]
+MO_10KEY:1:
+Mini-DIN, 6polig
+
+Pin	I/O	Signalname
+1	I/O	Mouse Data
+2	I/O	Keyboard Data
+3	-	Signalerde
+4	-	+5 V
+5	I/O	Mouse Clock
+6	I/O	Keyboard Clock
+@
+;<PC-Card Connector>
+[T18]
+Nothing
+PCMCIA Version 2.1, 2 68polige Steckplätze
+
+Pin	I/O	Signalname	Pin	I/O	Signalname
+1	-	GND		35	-	GND
+2	I/O	D3		36	O	-CD1
+3	I/O	D4		37	I/O	D11
+4	I/O	D5		38	I/O	D12
+5	I/O	D6		39	I/O	D13
+6	I/O	D7		40	I/O	D14
+7	I	-CE1		41	I/O	D15
+8	I	A10		42	I	-CE2
+9	I	-OE		43	I	RFSH
+10	I	A11		44	I	-IORD
+11	I	A9		45	I	-IOWR
+12	I	A8		46	I	A17
+13	I	A13		47	I	A18
+14	I	A14		48	I	A19
+15	I	-WE/-PGM	49	I	A20
+16	O	-IREQ		50	I	A21
+17	-	VCC		51	-	VCC
+18	-	VPP1		52	-	VPP2
+19	I	A16		53	I	A22
+20	I	A15		54	I	A23
+21	I	A12		55	I	A24
+22	I	A7		56	I	A25
+23	I	A6		57	-	RFU
+24	I	A5		58	I	RESET
+25	I	A4		59	O	-WAIT
+26	I	A3		60	O	-INPACK
+27	I	A2		61	I	-REG
+28	I	A1		62	O	-SPKR
+29	I	A0		63	O	-STSCHG
+30	I/O	D0		64	I/O	D8
+31	I/O	D1		65	I/O	D9
+32	I/O	D2		66	I/O	D10
+33	O	-IOCS16	67	O	-CD2
+34	-	GND		68	-	GND
+@
+;<Sound Jacks>
+[T19]
+Nothing
+Kopfhörerbuchse
+
+Pin	Signalname
+1	Erde
+2	Headphone Left
+3	Speaker Left
+4	Speaker Right
+5	Headphone Right
+
+Line-Eingangsbuchse
+
+Pin	Signalname
+1	Erde
+2	Line-in Left
+3	Erde
+4	Erde
+5	Line-in Right
+
+Mikrofonbuchse
+
+Pin	Signalname
+1	Erde
+2	Microphone In
+3	Erde
+4	-
+5	-
+@
+
+[T20]
+Nothing
+SCSI-Anschlußpins
+@
+

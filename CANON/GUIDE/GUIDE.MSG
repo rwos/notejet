@@ -1,0 +1,73 @@
+'This file includes all of the text used by the Guide engine itself, such as error messages and button labels:
+
+'Version number of the engine this OLG is authored for:
+1.11
+
+'Logo file to show:
+C:\CANON\GUIDE\C_LOGO.BMP
+
+'Labels for function keys:
+Haupt&menü
+A&ufwärts
+&Zurück
+&Vorwärts
+&Glossar
+&Drucken
+&Suchen
+&Hilfe
+V&erlassen
+
+'Messages and other labels:
+
+'About box:
+Laden der Canon On-line Hilfe...
+Canon On-line Hilfe
+
+'Print dialog box:
+Drucker:
+Ausgang:
+Neues Thema:
+Aktueller Schritt:
+Alle Themen
+Font:
+OK
+Abbrechen
+&Setup...
+Drucken
+
+'Search window:
+Such&text:
+Suchen
+&Nur Hauptthemen
+&Gesamter Text
+Themen:
+&Suchen
+Sch&ließen
+Ge&he zu
+All&es
+Suchen
+
+'Printing window:
+Drucken
+Drucken...
+
+'Messages:
+Thema nicht gefunden.
+Geben Sie den Suchtext ein.
+Text nicht gefunden.
+Bild nicht gefunden.
+Falsche Zeichensatznummer
+Datei nicht gefunden.
+Lesefehler in aktueller Datei
+Hauptmenü kann nicht geladen werden. Beenden.
+Bilder des Hauptmenüs können nicht geladen werden.
+On-line Hilfe nicht gefunden.
+Der voreingestellte Drucker wurde geändert. Verlassen Sie das Programm, starten Sie die On-line Hilfe erneut, um mit dem neuen, voreingestellten Drucker zu drucken. 
+Druckprobleme. Achten Sie darauf, daß Sie den richtigen, voreingestellten Drucker unter "Drucker" im Systemsteuerung ausgewählt haben. Prüfen Sie, ob der Drucker bereit ist. 
+Wählen Sie On-line Hilfe Datei.
+On-line Hilfe (*.olg)|*.olg|Alle Dateien (*.*)|*.*|
+Wählen Sie zwischen:
+(256-color Mode)
+(16-color Mode)
+\bHinweis:\b Sie befinden Sie momentan in einem Bildschirm-Modus, der weniger als 256 Farben zeigt. Um die Seiten der Hilfe in einem optimalen Überblick zu erhalten, empfehlen wir die Umschaltung zu einem Bildschirm-Treiber, der 256 Farben unterstützt. Wenn Ihr System diese Farben unterstützt, können Sie mit dem |Windows Setup|!RUN setup.exe| Programm (im Setup, wählen sie unter Optionen "Systemeinstellungen ändern") die Bildschirmfarben einstellen.
+Kann das Programm nicht starten. 

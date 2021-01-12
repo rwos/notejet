@@ -1,0 +1,27 @@
+[General]
+Version=002	1995/10/12
+Machine=Monochrome Printer ISA model
+Language=German
+Region=GR
+VRAM=1MB
+PANEL=TFT
+RES=MID
+MAXRAM=32MB
+BUS=ISA
+
+[Original_Master]
+Version=002	1995/10/12
+
+[Sub_Master]
+WIN95=002	1995/10/12
+DISP=004	1995/10/12
+IR=002	1995/10/12
+VB=003	1995/09/29
+ESS=003	1995/10/12
+PHNX=006	1995/10/04
+MPR=002	1995/10/12
+CANON=002	1995/10/12
+OLG=001	1995/10/12
+
+[Opt. Process]
+Enable Backup

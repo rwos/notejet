@@ -1,0 +1,119 @@
+1.1
+ 9 
+ 138 
+ 76 
+ 208 
+ 92 
+ 0 
+ 
+ 0 
+Leuchtet rot
+ 1 
+ 0 
+ 7 
+ 2 
+ 0 
+ 181 
+ 55 
+ 236 
+ 69 
+ 0 
+ 
+ 0 
+Blinkt rot
+ 1 
+ 0 
+ 7 
+ 2 
+ 0 
+ 19 
+ 141 
+ 57 
+ 152 
+ 0 
+ 
+ 0 
+Grün
+ 1 
+ 0 
+ 10 
+ 2 
+ 0 
+ 7 
+ 205 
+ 199 
+ 235 
+ 0 
+ 
+ 0 
+Dies ist der anfängliche Normalzustand beim Laden der Batterie.
+ 1 
+ 0 
+ 15 
+ 2 
+ 0 
+ 65 
+ 236 
+ 214 
+ 253 
+ 0 
+ 
+ 0 
+Die Batterie ist beinahe leer.
+ 1 
+ 0 
+ 15 
+ 2 
+ 0 
+ 6 
+ 279 
+ 115 
+ 295 
+ 0 
+ 
+ 0 
+(Batterie voll geladen)
+ 1 
+ 0 
+ 15 
+ 0 
+ 0 
+ 179 
+ 279 
+ 289 
+ 295 
+ 0 
+ 
+ 0 
+(Batterie beinahe leer)
+ 1 
+ 0 
+ 15 
+ 1 
+ 0 
+ 44 
+ 104 
+ 125 
+ 117 
+ 0 
+ 
+ 0 
+Leuchtet orange
+ 1 
+ 0 
+ 7 
+ 2 
+ 0 
+ 100 
+ 91 
+ 175 
+ 105 
+ 0 
+ 
+ 0 
+Blinkt orange
+ 1 
+ 0 
+ 7 
+ 2 
+ 0 
