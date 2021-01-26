@@ -1,0 +1,103 @@
+; INF file for OPTi display driver.
+; Copyright 1994, Microsoft Corporation
+
+[version]
+Class=Display
+signature="$CHICAGO$"
+Provider=%Mfg%
+SetupClass=BASE
+
+[SourceDisksNames]
+51="Win95 OPTi 92C178 Driver Disk",,1
+
+[SourceDisksFiles]
+opti178.drv=51
+opti.vxd=51
+
+;----------------------------------------
+; Manufacturers 
+
+[Manufacturer]
+"%Mfg%"=Mfg
+
+;----------------------------------------
+; Driver sections
+
+[Mfg]
+%OPTi.DeviceDesc%=OPTi_Inst,OPTi
+
+;----------------------------------------
+; Install sections
+
+[OPTi_Inst]
+CopyFiles=OPTi_CopyFiles
+DelReg=DEL_CURRENT_REG
+AddReg=OPTi_AddReg
+
+;----------------------------------------
+; Common AddReg sections
+
+[DEL_CURRENT_REG]
+HKR,,Ver
+HKR,,DevLoader
+HKR,DEFAULT
+HKR,MODES
+HKR,CURRENT
+
+;----------------------------------------
+; Model AddReg sections
+
+[OPTi_AddReg]
+HKR,,Ver,,4.0
+HKR,,DevLoader,,*vdd
+HKR,DEFAULT,Mode,,"8,800,600"
+HKR,DEFAULT,drv,,opti178.drv
+HKR,DEFAULT,vdd,,"*vdd,*vflatd"
+HKR,DEFAULT,minivdd,,opti.vxd
+;HKR,"MODES\4\640,480",drv,,vga.drv
+;HKR,"MODES\4\640,480",vdd,,*vdd
+;HKR,"MODES\4\800,600",drv,,supervga.drv
+;HKR,"MODES\4\800,600",vdd,,*vdd
+HKR,"MODES\8\640,480"
+HKR,"MODES\8\800,600"
+HKR,"MODES\8\1024,768"
+HKR,"MODES\16\640,480"
+HKR,"MODES\16\800,600"
+;HKR,"MODES\24\640,480"
+
+;----------------------------------------
+; File Update References
+
+[DestinationDirs]
+DefaultDestDir=11               ; LDID_SYS
+
+;----------------------------------------
+; CopyFiles sections
+
+[OPTi_CopyFiles]
+opti178.drv
+opti.vxd
+
+; Install class "Display"
+; ---------------------------------------------------------
+[ClassInstall]
+AddReg=ClassAddReg
+DelReg=ClassDelReg
+
+[ClassAddReg]
+HKR,,,,%ClassName%
+HKR,,Installer,,"SetupX.Dll, Display_ClassInstaller"
+HKR,,Icon,,"-1"
+
+[ClassDelReg]
+HKLM,System\CurrentControlSet\Services\Class\Display,EnumPropPages
+
+
+;----------------------------------------
+; User visible strings
+;ClassName="Display"
+
+[Strings]
+ClassName="Display adapters"
+Mfg="OPTi"
+OPTi.DeviceDesc="OPTi 92C178"

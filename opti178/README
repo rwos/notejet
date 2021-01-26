@@ -1,0 +1,46 @@
+
+
+To install:
+
+1)  Open the Display control panel.
+
+2)  Select the Settings page.
+
+3)  Click the "Change Display Type" button.
+
+4)  Click the "Change" button for the adapter type.
+
+5)  Click the "Have Disk" button, and enter the
+    path to this driver directory. e.g. A:\
+
+6)  Select the display type "OPTi92C178"
+    and click OK.
+
+7)  Click the "Close" button.
+
+8)  Select the desired desktop area and colors in
+    the Settings page.
+
+9)  Click the "Close" button, and click "Yes"
+    when prompted for restarting the computer now.
+
+
+
+To change color depths and resolutions after installation:
+
+1)  Open the Display control panel.
+
+2)  Select the Settings page.
+
+3)  Select the resolution size desired under Desktop area.
+
+4)  Select the color depths desired under Color palette.
+
+5)  Check to see if the resolution size has changed from the one
+    selected by you in step 3. If it did, that is the maximum
+    resolution supported for that color depth.
+
+6)  Click the "OK" button.
+
+7)  Follow instructions from Windows pop-up windows.
+
